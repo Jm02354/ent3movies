@@ -12,4 +12,4 @@ router.use('/directors', routerDirector)
 router.use('/movies', routerMovie)
 
 
-module.exports = router;
+module.exports = router
