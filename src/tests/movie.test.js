@@ -41,7 +41,6 @@ test("GET -> BASE_URL, should return statusCode 200, res.body.length === 1", asy
   expect(res.statusCode).toBe(200)
   expect(res.body).toBeDefined()
   expect(res.body).toHaveLength(1)
-  //expect(res.body.length).toBe(1)
   
   //Ask if actors column exists
   expect(res.body[0].actors).toBeDefined() //res.body -> array --- position 0
@@ -145,7 +144,6 @@ test("POST -> BASE_URL/:id/genres, should return statusCode 200, and res.body.le
   expect(res.body[0].id).toBe(createGenres.id)
 
   await createGenres.destroy()
-
 })
 
 //DELETE

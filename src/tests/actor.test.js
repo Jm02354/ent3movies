@@ -36,7 +36,6 @@ test("GET -> BASE_URL, should return statusCode 200, res.body.length === 1", asy
   expect(res.statusCode).toBe(200)
   expect(res.body).toBeDefined()
   expect(res.body).toHaveLength(1)  
-  //expect(res.body.length).toBe(1)
 })
 
 //PUT
